@@ -1,0 +1,87 @@
+.trainer-page {
+    display: flex;
+    background-color: #0b0b0b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.trainer-list {
+    width: 30%;
+    background-color: #1b1b1b;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+.trainer-list h2 {
+    color: #d4a427;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.trainer-list input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.trainer {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.trainer:hover {
+    background-color: #333;
+}
+
+.trainer img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+}
+
+.trainer div {
+    line-height: 1.3;
+}
+
+.trainer div div:first-child {
+    font-weight: 600;
+}
+
+.trainer div div:last-child {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.trainer.selected {
+    background-color: #3a3a3a;
+}
+
+.current-video {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.current-video iframe {
+    width: 620px;
+    height: 80%;
+    border: none;
+}
